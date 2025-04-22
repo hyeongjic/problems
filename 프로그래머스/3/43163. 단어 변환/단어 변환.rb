@@ -20,7 +20,7 @@ def solution(start, target, words)
     answer = 0
     return answer unless words.include? target
      
-    answer = check_word(start, target, words, 0, 50) 
-    
+    answer = check_word(start, target, words, 0, 51) 
+    answer = 0 if answer == 51
     return answer
 end
